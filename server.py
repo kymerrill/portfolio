@@ -8,20 +8,6 @@ def my_home():
     return render_template('index.html')
 
 
-# @app.route('/blog')
-# def blog():
-#     return 'These are my thoughts on blogs: they suck.'
-
-
-# @app.route('/blog/2020/dogs')
-# def blog2():
-#     return 'This is my dog!'
-
-
-# @app.route('/about.html')
-# def about():
-#     return render_template('about.html')
-
 @app.route('/submit_form', methods=['POST', 'GET'])
 def submit_form():
     if request.method == 'POST':
